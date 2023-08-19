@@ -1,0 +1,566 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/first_fragment"
+    android:id="@+id/nav_graph">
+
+    <keep_state_fragment
+        android:id="@+id/first_fragment"
+        android:name="com.nayeon.daechungapp2.FirstFragment"
+        app:popUpToSaveState="true"
+        tools:layout="@layout/fragment_first"
+        android:label="FirstFragment" >
+
+
+        <action
+            android:id="@+id/action_first_fragment_to_service_detail_fragment"
+            app:destination="@id/service_job_fragment" />
+        <action
+            android:id="@+id/action_first_fragment_to_product_job_fragment"
+            app:destination="@id/product_job_fragment" />
+        <action
+            android:id="@+id/action_first_fragment_to_med_job_fragment"
+            app:destination="@id/med_job_fragment" />
+        <action
+            android:id="@+id/action_first_fragment_to_ship_job_fragment"
+            app:destination="@id/ship_job_fragment" />
+        <action
+            android:id="@+id/action_first_fragment_to_build_job_fragment"
+            app:destination="@id/build_job_fragment" />
+        <action
+            android:id="@+id/action_first_fragment_to_edu_job_fragment"
+            app:destination="@id/edu_job_fragment" />
+        <action
+            android:id="@+id/action_first_fragment_to_it_job_fragment"
+            app:destination="@id/it_job_fragment" />
+        <action
+            android:id="@+id/action_first_fragment_to_media_job_fragment"
+            app:destination="@id/media_job_fragment" />
+        <action
+            android:id="@+id/action_first_fragment_to_organ_job_fragment"
+            app:destination="@id/organ_job_fragment" />
+        <action
+            android:id="@+id/action_first_fragment_to_bank_job_fragment"
+            app:destination="@id/bank_job_fragment" />
+
+
+    </keep_state_fragment>
+
+
+    <keep_state_fragment
+        android:id="@+id/service_job_fragment"
+        android:name="com.nayeon.daechungapp2.ServiceJobFragment"
+        app:popUpToSaveState="true"
+        tools:layout="@layout/fragment_service_job"
+        android:label="ServiceJobFragment" >
+        <action
+            android:id="@+id/action_service_detail_fragment_to_service_support_fragment"
+            app:destination="@id/service_support_fragment" />
+        <action
+            android:id="@+id/action_service_job_fragment_to_service_plan_fragment"
+            app:destination="@id/service_plan_fragment" />
+        <action
+            android:id="@+id/action_service_job_fragment_to_service_business_fragment"
+            app:destination="@id/service_business_fragment" />
+    </keep_state_fragment>
+
+    <keep_state_fragment
+        android:id="@+id/service_support_fragment"
+        android:name="com.nayeon.daechungapp2.ServiceSupportFragment"
+        app:popUpToSaveState="true"
+        tools:layout="@layout/fragment_service_support"
+        android:label="ServiceSupportFragment" />
+
+    <keep_state_fragment
+        android:id="@+id/second_fragment"
+        android:name="com.nayeon.daechungapp2.SecondFragment"
+        app:popUpToSaveState="true"
+        tools:layout="@layout/fragment_second"
+        android:label="SecondFragment" />
+
+    <keep_state_fragment
+        android:id="@+id/third_fragment"
+        android:name="com.nayeon.daechungapp2.ThirdFragment"
+        app:popUpToSaveState="true"
+        tools:layout="@layout/fragment_third"
+        android:label="ThirdFragment" />
+    <keep_state_fragment
+        android:id="@+id/service_plan_fragment"
+        android:name="com.nayeon.daechungapp2.SerivcePlanFragment"
+        app:popUpToSaveState="true"
+        tools:layout="@layout/fragment_serivce_plan"
+        android:label="SerivcePlanFragment" />
+
+    <keep_state_fragment
+        android:id="@+id/service_business_fragment"
+        android:name="com.nayeon.daechungapp2.ServiceBusinessFragment"
+        app:popUpToSaveState="true"
+        tools:layout="@layout/fragment_service_business"
+        android:label="ServiceBusinessFragment" />
+
+    <keep_state_fragment
+        android:id="@+id/product_job_fragment"
+        android:name="com.nayeon.daechungapp2.ProductJobFragment"
+        app:popUpToSaveState="true"
+        tools:layout="@layout/fragment_product_job"
+        android:label="ProductJobFragment" >
+        <action
+            android:id="@+id/action_product_job_fragment_to_product_support_fragment"
+            app:destination="@id/product_support_fragment" />
+    </keep_state_fragment>
+    <keep_state_fragment
+        android:id="@+id/product_support_fragment"
+        android:name="com.nayeon.daechungapp2.ProductSupportFragment"
+        app:popUpToSaveState="true"
+        tools:layout="@layout/fragment_product_support"
+        android:label="ProductSupportFragment" />
+
+    <keep_state_fragment
+        android:id="@+id/med_job_fragment"
+        android:name="com.nayeon.daechungapp2.MedJobFragment"
+        app:popUpToSaveState="true"
+        tools:layout="@layout/fragment_med_job"
+        android:label="MedJobFragment" />
+
+    <keep_state_fragment
+        android:id="@+id/ship_job_fragment"
+        android:name="com.nayeon.daechungapp2.ShipJobFragment"
+        app:popUpToSaveState="true"
+        tools:layout="@layout/fragment_ship_job"
+        android:label="ShipJobFragment" />
+
+    <keep_state_fragment
+        android:id="@+id/build_job_fragment"
+        android:name="com.nayeon.daechungapp2.BuildJobFragment"
+        app:popUpToSaveState="true"
+        tools:layout="@layout/fragment_build_job"
+        android:label="BuildJobFragment" >
+        <action
+            android:id="@+id/action_build_job_fragment_to_build_data_fragment"
+            app:destination="@id/build_data_fragment" />
+        <action
+            android:id="@+id/action_build_job_fragment_to_build_support_fragment"
+            app:destination="@id/build_support_fragment" />
+        <action
+            android:id="@+id/action_build_job_fragment_to_build_design_fragment"
+            app:destination="@id/build_design_fragment" />
+        <action
+            android:id="@+id/action_build_job_fragment_to_build_dev_fragment"
+            app:destination="@id/build_dev_fragment" />
+        <action
+            android:id="@+id/action_build_job_fragment_to_build_drug_fragment"
+            app:destination="@id/build_drug_fragment" />
+        <action
+            android:id="@+id/action_build_job_fragment_to_build_edu_fragment"
+            app:destination="@id/build_edu_fragment" />
+        <action
+            android:id="@+id/action_build_job_fragment_to_build_engine_fragment"
+            app:destination="@id/build_engine_fragment" />
+        <action
+            android:id="@+id/action_build_job_fragment_to_build_manage_fragment"
+            app:destination="@id/build_manage_fragment" />
+        <action
+            android:id="@+id/action_build_job_fragment_to_build_etc_fragment"
+            app:destination="@id/build_etc_fragment" />
+        <action
+            android:id="@+id/action_build_job_fragment_to_build_law_fragment"
+            app:destination="@id/build_law_fragment" />
+        <action
+            android:id="@+id/action_build_job_fragment_to_build_money_fragment"
+            app:destination="@id/build_money_fragment" />
+        <action
+            android:id="@+id/action_build_job_fragment_to_build_marketing_fragment"
+            app:destination="@id/build_marketing_fragment" />
+        <action
+            android:id="@+id/action_build_job_fragment_to_build_profess_fragment"
+            app:destination="@id/build_profess_fragment" />
+        <action
+            android:id="@+id/action_build_job_fragment_to_build_media_fragment"
+            app:destination="@id/build_media_fragment" />
+        <action
+            android:id="@+id/action_build_job_fragment_to_build_plan_fragment"
+            app:destination="@id/build_plan_fragment" />
+        <action
+            android:id="@+id/action_build_job_fragment_to_build_personnel_fragment"
+            app:destination="@id/build_personnel_fragment" />
+        <action
+            android:id="@+id/action_build_job_fragment_to_build_business_fragment"
+            app:destination="@id/build_business_fragment" />
+        <action
+            android:id="@+id/action_build_job_fragment_to_build_research_fragment"
+            app:destination="@id/build_research_fragment" />
+        <action
+            android:id="@+id/action_build_job_fragment_to_build_special_fragment"
+            app:destination="@id/build_special_fragment" />
+        <action
+            android:id="@+id/action_build_job_fragment_to_build_trade_fragment"
+            app:destination="@id/build_trade_fragment" />
+        <action
+            android:id="@+id/action_build_job_fragment_to_build_making_fragment"
+            app:destination="@id/build_making_fragment" />
+    </keep_state_fragment>
+
+    <keep_state_fragment
+        android:id="@+id/edu_job_fragment"
+        android:name="com.nayeon.daechungapp2.EduJobFragment"
+        app:popUpToSaveState="true"
+        tools:layout="@layout/fragment_edu_job"
+        android:label="EduJobFragment" >
+        <action
+            android:id="@+id/action_edu_job_fragment_to_edu_special_fragment"
+            app:destination="@id/edu_special_fragment" />
+        <action
+            android:id="@+id/action_edu_job_fragment_to_edu_drug_fragment"
+            app:destination="@id/edu_drug_fragment" />
+        <action
+            android:id="@+id/action_edu_job_fragment_to_edu_law_fragment"
+            app:destination="@id/edu_law_fragment" />
+        <action
+            android:id="@+id/action_edu_job_fragment_to_edu_making_fragment"
+            app:destination="@id/edu_making_fragment" />
+        <action
+            android:id="@+id/action_edu_job_fragment_to_edu_manage_fragment"
+            app:destination="@id/edu_manage_fragment" />
+        <action
+            android:id="@+id/action_edu_job_fragment_to_edu_engine_fragment"
+            app:destination="@id/edu_engine_fragment" />
+        <action
+            android:id="@+id/action_edu_job_fragment_to_edu_etc_fragment"
+            app:destination="@id/edu_etc_fragment" />
+        <action
+            android:id="@+id/action_edu_job_fragment_to_edu_personnel_fragment"
+            app:destination="@id/edu_personnel_fragment" />
+        <action
+            android:id="@+id/action_edu_job_fragment_to_edu_design_fragment"
+            app:destination="@id/edu_design_fragment" />
+        <action
+            android:id="@+id/action_edu_job_fragment_to_edu_edu_fragment"
+            app:destination="@id/edu_edu_fragment" />
+        <action
+            android:id="@+id/action_edu_job_fragment_to_edu_data_fragment"
+            app:destination="@id/edu_data_fragment" />
+        <action
+            android:id="@+id/action_edu_job_fragment_to_edu_support_fragment"
+            app:destination="@id/edu_support_fragment" />
+        <action
+            android:id="@+id/action_edu_job_fragment_to_edu_media_fragment"
+            app:destination="@id/edu_media_fragment" />
+        <action
+            android:id="@+id/action_edu_job_fragment_to_edu_trade_fragment"
+            app:destination="@id/edu_trade_fragment" />
+        <action
+            android:id="@+id/action_edu_job_fragment_to_edu_plan_fragment"
+            app:destination="@id/edu_plan_fragment" />
+        <action
+            android:id="@+id/action_edu_job_fragment_to_edu_money_fragment"
+            app:destination="@id/edu_money_fragment" />
+        <action
+            android:id="@+id/action_edu_job_fragment_to_edu_marketing_fragment"
+            app:destination="@id/edu_marketing_fragment" />
+        <action
+            android:id="@+id/action_edu_job_fragment_to_edu_dev_fragment"
+            app:destination="@id/edu_dev_fragment" />
+        <action
+            android:id="@+id/action_edu_job_fragment_to_edu_business_fragment"
+            app:destination="@id/edu_business_fragment" />
+        <action
+            android:id="@+id/action_edu_job_fragment_to_edu_research_fragment"
+            app:destination="@id/edu_research_fragment" />
+        <action
+            android:id="@+id/action_edu_job_fragment_to_edu_profess_fragment"
+            app:destination="@id/edu_profess_fragment" />
+    </keep_state_fragment>
+
+    <keep_state_fragment
+        android:id="@+id/media_job_fragment"
+        android:name="com.nayeon.daechungapp2.MediaJobFragment"
+        app:popUpToSaveState="true"
+        tools:layout="@layout/fragment_media_job"
+        android:label="MediaJobFragment" />
+
+    <keep_state_fragment
+        android:id="@+id/it_job_fragment"
+        android:name="com.nayeon.daechungapp2.ItJobFragment"
+        app:popUpToSaveState="true"
+        tools:layout="@layout/fragment_it_job"
+        android:label="ItJobFragment" />
+
+    <keep_state_fragment
+        android:id="@+id/bank_job_fragment"
+        android:name="com.nayeon.daechungapp2.BankJobFragment"
+        app:popUpToSaveState="true"
+        tools:layout="@layout/fragment_bank_job"
+        android:label="BankJobFragment" />
+
+    <keep_state_fragment
+        android:id="@+id/organ_job_fragment"
+        android:name="com.nayeon.daechungapp2.OrganJobFragment"
+        app:popUpToSaveState="true"
+        tools:layout="@layout/fragment_organ_job"
+        android:label="OrganJobFragment" />
+
+    <keep_state_fragment
+        android:id="@+id/build_support_fragment"
+        android:name="com.nayeon.daechungapp2.BuildSupportFragment"
+        app:popUpToSaveState="true"
+        tools:layout="@layout/fragment_build_support"
+        android:label="BuildSupportFragment" />
+    <keep_state_fragment
+        android:id="@+id/build_data_fragment"
+        android:name="com.nayeon.daechungapp2.BuildDataFragment"
+        app:popUpToSaveState="true"
+        tools:layout="@layout/fragment_build_data"
+        android:label="BuildDataFragment" />
+    <keep_state_fragment
+        android:id="@+id/build_design_fragment"
+        android:name="com.nayeon.daechungapp2.BuildDesignFragment"
+        app:popUpToSaveState="true"
+        tools:layout="@layout/fragment_build_design"
+        android:label="BuildDesignFragment" />
+    <keep_state_fragment
+        android:id="@+id/build_dev_fragment"
+        android:name="com.nayeon.daechungapp2.BuildDevFragment"
+        app:popUpToSaveState="true"
+        tools:layout="@layout/fragment_build_dev"
+        android:label="BuildDevFragment" />
+    <keep_state_fragment
+        android:id="@+id/build_drug_fragment"
+        android:name="com.nayeon.daechungapp2.BuildDrugFragment"
+        app:popUpToSaveState="true"
+        tools:layout="@layout/fragment_build_drug"
+        android:label="BuildDrugFragment" />
+    <keep_state_fragment
+        android:id="@+id/build_edu_fragment"
+        android:name="com.nayeon.daechungapp2.BuildEduFragment"
+        app:popUpToSaveState="true"
+        tools:layout="@layout/fragment_build_edu"
+        android:label="BuildEduFragment" />
+    <keep_state_fragment
+        android:id="@+id/build_engine_fragment"
+        android:name="com.nayeon.daechungapp2.BuildEngineFragment"
+        app:popUpToSaveState="true"
+        tools:layout="@layout/fragment_build_engine"
+        android:label="BuildEngineFragment" />
+    <keep_state_fragment
+        android:id="@+id/build_etc_fragment"
+        android:name="com.nayeon.daechungapp2.BuildEtcFragment"
+        app:popUpToSaveState="true"
+        tools:layout="@layout/fragment_build_etc"
+        android:label="BuildEtcFragment" />
+    <keep_state_fragment
+        android:id="@+id/build_manage_fragment"
+        android:name="com.nayeon.daechungapp2.BuildManageFragment"
+        app:popUpToSaveState="true"
+        tools:layout="@layout/fragment_build_manage"
+        android:label="BuildManageFragment" />
+    <keep_state_fragment
+        android:id="@+id/build_law_fragment"
+        android:name="com.nayeon.daechungapp2.BuildLawFragment"
+        app:popUpToSaveState="true"
+        tools:layout="@layout/fragment_build_law"
+        android:label="BuildLawFragment" />
+    <keep_state_fragment
+        android:id="@+id/build_marketing_fragment"
+        android:name="com.nayeon.daechungapp2.BuildMarketingFragment"
+        app:popUpToSaveState="true"
+        tools:layout="@layout/fragment_build_marketing"
+        android:label="BuildMarketingFragment" />
+    <keep_state_fragment
+        android:id="@+id/build_money_fragment"
+        android:name="com.nayeon.daechungapp2.BuildMoneyFragment"
+        app:popUpToSaveState="true"
+        tools:layout="@layout/fragment_build_money"
+        android:label="BuildMoneyFragment" />
+    <keep_state_fragment
+        android:id="@+id/build_media_fragment"
+        android:name="com.nayeon.daechungapp2.BuildMediaFragment"
+        app:popUpToSaveState="true"
+        tools:layout="@layout/fragment_build_media"
+        android:label="BuildMediaFragment" />
+    <keep_state_fragment
+        android:id="@+id/build_personnel_fragment"
+        android:name="com.nayeon.daechungapp2.BuildPersonnelFragment"
+        app:popUpToSaveState="true"
+        tools:layout="@layout/fragment_build_personnel"
+        android:label="BuildPersonnelFragment" />
+    <keep_state_fragment
+        android:id="@+id/build_plan_fragment"
+        android:name="com.nayeon.daechungapp2.BuildPlanFragment"
+        app:popUpToSaveState="true"
+        tools:layout="@layout/fragment_build_plan"
+        android:label="BuildPlanFragment" />
+    <keep_state_fragment
+        android:id="@+id/build_profess_fragment"
+        android:name="com.nayeon.daechungapp2.BuildProfessFragment"
+        app:popUpToSaveState="true"
+        tools:layout="@layout/fragment_build_profess"
+        android:label="BuildProfessFragment" />
+    <keep_state_fragment
+        android:id="@+id/build_research_fragment"
+        android:name="com.nayeon.daechungapp2.BuildResearchFragment"
+        app:popUpToSaveState="true"
+        tools:layout="@layout/fragment_build_research"
+        android:label="BuildResearchFragment" />
+    <keep_state_fragment
+        android:id="@+id/build_special_fragment"
+        android:name="com.nayeon.daechungapp2.BuildSpecialFragment"
+        app:popUpToSaveState="true"
+        tools:layout="@layout/fragment_build_special"
+        android:label="BuildSpecialFragment" />
+    <keep_state_fragment
+        android:id="@+id/build_business_fragment"
+        android:name="com.nayeon.daechungapp2.BuildBusinessFragment"
+        app:popUpToSaveState="true"
+        tools:layout="@layout/fragment_build_business"
+        android:label="BuildBusinessFragment" />
+    <keep_state_fragment
+        android:id="@+id/build_trade_fragment"
+        android:name="com.nayeon.daechungapp2.BuildTradeFragment"
+        app:popUpToSaveState="true"
+        tools:layout="@layout/fragment_build_trade"
+        android:label="BuildTradeFragment" />
+    <keep_state_fragment
+        android:id="@+id/build_making_fragment"
+        android:name="com.nayeon.daechungapp2.BuildMakingFragment"
+        app:popUpToSaveState="true"
+        tools:layout="@layout/fragment_build_making"
+        android:label="BuildMakingFragment" />
+
+
+    <keep_state_fragment
+        android:id="@+id/edu_support_fragment"
+        android:name="com.nayeon.daechungapp2.EduSupportFragment"
+        app:popUpToSaveState="true"
+        tools:layout="@layout/fragment_edu_support"
+        android:label="EduSupportFragment" />
+    <keep_state_fragment
+        android:id="@+id/edu_data_fragment"
+        android:name="com.nayeon.daechungapp2.EduDataFragment"
+        app:popUpToSaveState="true"
+        tools:layout="@layout/fragment_edu_data"
+        android:label="EduDataFragment" />
+    <keep_state_fragment
+        android:id="@+id/edu_design_fragment"
+        android:name="com.nayeon.daechungapp2.EduDesignFragment"
+        app:popUpToSaveState="true"
+        tools:layout="@layout/fragment_edu_design"
+        android:label="EduDesignFragment" />
+    <keep_state_fragment
+        android:id="@+id/edu_dev_fragment"
+        android:name="com.nayeon.daechungapp2.EduDevFragment"
+        app:popUpToSaveState="true"
+        tools:layout="@layout/fragment_edu_dev"
+        android:label="EduDevFragment" />
+    <keep_state_fragment
+        android:id="@+id/edu_drug_fragment"
+        android:name="com.nayeon.daechungapp2.EduDrugFragment"
+        app:popUpToSaveState="true"
+        tools:layout="@layout/fragment_edu_drug"
+        android:label="EduDrugFragment" />
+    <keep_state_fragment
+        android:id="@+id/edu_edu_fragment"
+        android:name="com.nayeon.daechungapp2.EduEduFragment"
+        app:popUpToSaveState="true"
+        tools:layout="@layout/fragment_edu_edu"
+        android:label="EduEduFragment" />
+    <keep_state_fragment
+        android:id="@+id/edu_engine_fragment"
+        android:name="com.nayeon.daechungapp2.EduEngineFragment"
+        app:popUpToSaveState="true"
+        tools:layout="@layout/fragment_edu_engine"
+        android:label="EduEngineFragment" />
+    <keep_state_fragment
+        android:id="@+id/edu_etc_fragment"
+        android:name="com.nayeon.daechungapp2.EduEtcFragment"
+        app:popUpToSaveState="true"
+        tools:layout="@layout/fragment_edu_etc"
+        android:label="EduEtcFragment" />
+    <keep_state_fragment
+        android:id="@+id/edu_manage_fragment"
+        android:name="com.nayeon.daechungapp2.EduManageFragment"
+        app:popUpToSaveState="true"
+        tools:layout="@layout/fragment_edu_manage"
+        android:label="EduManageFragment" />
+    <keep_state_fragment
+        android:id="@+id/edu_law_fragment"
+        android:name="com.nayeon.daechungapp2.EduLawFragment"
+        app:popUpToSaveState="true"
+        tools:layout="@layout/fragment_edu_law"
+        android:label="EduLawFragment" />
+    <keep_state_fragment
+        android:id="@+id/edu_marketing_fragment"
+        android:name="com.nayeon.daechungapp2.EduMarketingFragment"
+        app:popUpToSaveState="true"
+        tools:layout="@layout/fragment_edu_marketing"
+        android:label="EduMarketingFragment" />
+    <keep_state_fragment
+        android:id="@+id/edu_money_fragment"
+        android:name="com.nayeon.daechungapp2.EduMoneyFragment"
+        app:popUpToSaveState="true"
+        tools:layout="@layout/fragment_edu_money"
+        android:label="EduMoneyFragment" />
+    <keep_state_fragment
+        android:id="@+id/edu_media_fragment"
+        android:name="com.nayeon.daechungapp2.EduMediaFragment"
+        app:popUpToSaveState="true"
+        tools:layout="@layout/fragment_edu_media"
+        android:label="EduMediaFragment" />
+    <keep_state_fragment
+        android:id="@+id/edu_personnel_fragment"
+        android:name="com.nayeon.daechungapp2.EduPersonnelFragment"
+        app:popUpToSaveState="true"
+        tools:layout="@layout/fragment_edu_personnel"
+        android:label="EduPersonnelFragment" />
+    <keep_state_fragment
+        android:id="@+id/edu_plan_fragment"
+        android:name="com.nayeon.daechungapp2.EduPlanFragment"
+        app:popUpToSaveState="true"
+        tools:layout="@layout/fragment_edu_plan"
+        android:label="EduPlanFragment" />
+    <keep_state_fragment
+        android:id="@+id/edu_profess_fragment"
+        android:name="com.nayeon.daechungapp2.EduProfessFragment"
+        app:popUpToSaveState="true"
+        tools:layout="@layout/fragment_edu_profess"
+        android:label="EduProfessFragment" />
+    <keep_state_fragment
+        android:id="@+id/edu_research_fragment"
+        android:name="com.nayeon.daechungapp2.EduResearchFragment"
+        app:popUpToSaveState="true"
+        tools:layout="@layout/fragment_edu_research"
+        android:label="EduResearchFragment" />
+    <keep_state_fragment
+        android:id="@+id/edu_special_fragment"
+        android:name="com.nayeon.daechungapp2.EduSpecialFragment"
+        app:popUpToSaveState="true"
+        tools:layout="@layout/fragment_edu_special"
+        android:label="EduSpecialFragment" />
+    <keep_state_fragment
+        android:id="@+id/edu_business_fragment"
+        android:name="com.nayeon.daechungapp2.EduBusinessFragment"
+        app:popUpToSaveState="true"
+        tools:layout="@layout/fragment_edu_business"
+        android:label="EduBusinessFragment" />
+    <keep_state_fragment
+        android:id="@+id/edu_trade_fragment"
+        android:name="com.nayeon.daechungapp2.EduTradeFragment"
+        app:popUpToSaveState="true"
+        tools:layout="@layout/fragment_edu_trade"
+        android:label="EduTradeFragment" />
+    <keep_state_fragment
+        android:id="@+id/edu_making_fragment"
+        android:name="com.nayeon.daechungapp2.EduMakingFragment"
+        app:popUpToSaveState="true"
+        tools:layout="@layout/fragment_edu_making"
+        android:label="EduMakingFragment" />
+
+
+
+
+
+
+
+
+
+</navigation>
